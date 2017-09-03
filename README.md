@@ -1,4 +1,4 @@
-# youtrack README
+# YouTrack Extension README
 
 Issue list and git integrated task extension for YouTrack Issue management tool.
 
