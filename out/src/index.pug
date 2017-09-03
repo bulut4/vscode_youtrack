@@ -1,0 +1,22 @@
+html
+    head
+        script(type='text/javascript').
+            function tikla(id) {
+                const args = [id]; 
+                window.parent.postMessage({
+                    command: "did-click-link",
+                    data: "command:youtrack.branch?" + encodeURIComponent(JSON.stringify(args))
+                }, "file://");
+            }
+        style(type='text/css').
+            a {
+                text-decoration: none;
+                color: lime;
+            }
+    body
+        ul
+            each itm in issues
+                - var id = itm['$'].id
+                - var description = itm['field'][3]['value'][0]
+                li Issue ID: #{id} - Description: #{description}
+                    a(onclick='tikla("' + id + '")', href='#') Open Issue

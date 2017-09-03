@@ -1,0 +1,59 @@
+{
+    "name": "youtrack",
+    "displayName": "youtrack",
+    "description": "Youtrack issue list and create for VSCode.",
+    "version": "0.0.1",
+    "publisher": "bulut4",
+    "engines": {
+        "vscode": "^1.15.0"
+    },
+    "author": {
+        "name": "bulut4",
+        "url": "http://www.bulut4.com",
+        "email": "support@bulut4.com"
+    },
+    "keywords": [
+        "youtrack",
+        "issue",
+        "task",
+        "bulut4"
+    ],
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:youtrack.list"
+    ],
+    "main": "./out/src/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "youtrack.list",
+                "title": "YouTrack: List"
+            },
+            {
+                "command": "youtrack.closeIssue",
+                "title": "YouTrack: Close Active Issue"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "tsc -p ./",
+        "compile": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "@types/mocha": "^2.2.32",
+        "@types/node": "^6.0.40",
+        "@types/xml2js": "^0.4.0",
+        "@types/pug": "^2.0.4",
+        "mocha": "^2.3.3",
+        "typescript": "^2.0.3",
+        "vscode": "^1.0.0"
+    },
+    "dependencies": {
+        "pug": "^2.0.0-rc.3",
+        "xml2js": "^0.4.19"
+    }
+}
