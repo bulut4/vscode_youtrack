@@ -46,4 +46,8 @@ Please issue on github.
 
 First release.
 
+### 0.0.5
+
+Step by step installation guide and bug fixed.
+
 **Enjoy!**

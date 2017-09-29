@@ -2,7 +2,7 @@
     "name": "youtrack",
     "displayName": "YouTrack",
     "description": "YouTrack issue list and create for VSCode.",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "publisher": "bulut4",
     "engines": {
         "vscode": "^1.15.0"
