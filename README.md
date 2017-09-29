@@ -2,6 +2,18 @@
 
 Issue list and git integrated task extension for YouTrack Issue management tool.
 
+## Step by Step Installation
+1. Install extension in VSCode extension manager (View -> Extensions) and reload VSCode.
+![](http://www.bulut4.com/images/youtrack/step1.gif)
+
+2. Open settings menu and write custom settings. (View->Command Palette->User Settings)
+![](http://www.bulut4.com/images/youtrack/step2.gif)
+
+3. Open Command Palette (View->Command Palette) and write Youtrack: Issue List
+![](http://www.bulut4.com/images/youtrack/step3.gif)
+
+4. Open any issue click "Open Issue" link on Youtrack List side. Extension create git branch automatically and checkout this branch.
+
 ## Features
 
 * Issue list.
