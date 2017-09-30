@@ -12,7 +12,11 @@ Issue list and git integrated task extension for YouTrack Issue management tool.
 3. Open Command Palette (View->Command Palette) and write Youtrack: Issue List
 ![](http://www.bulut4.com/images/youtrack/step3.gif)
 
-4. Open any issue click "Open Issue" link on Youtrack List side. Extension create git branch automatically and checkout this branch.
+4. Open any issue click "Open Issue" link on Youtrack List side. Extension create git branch automatically and checkout this branch. Issue "State" field value changed to "In Progress" on Youtrack.
+
+5. You finish work in this issue, open command palette and write "Youtrack: Close Issue". Extension merge git branch to base branch and issue "State" field value changed to "Fixed" on Youtrack.
+
+Extension supported functionalty like a webstorm youtrack extension functionalty.
 
 ## Features
 
